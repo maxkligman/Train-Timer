@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>TRAINS</title>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">TRAIN TIMER</h1>
+            <p class="lead">something else about trains</p>
+        </div>
+    </div>
+
+    <section class="card">
+        <div class="card-header">
+         <h4>Train Schedule</h4>
+        </div>
+        <div class="card-body">
+            <table id="train-schedule" class="table text-center">
+                <thead>
+                    <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency (min)</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </section>
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col" id="train-name-col">
+                <h6>Train Name</h6>
+            </div>
+            <div class="col" id="train-destination-col">
+                <h6>Destination</h6>
+            </div>
+            <div class="col" id="train-frequency-col">
+                <h6>Frequency (minutes)</h6>
+            </div>
+            <div class="col" id="next-arrival-col">
+                <h6>Next Arrival</h6>
+            </div>
+            <div class="col" id="time-until-col">
+                <h6>Minutes Away</h6>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="row mt-3">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body" style="text-align: center">
+                    <h2>
+                        Add Train:</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col-12 form-group">
+                <label for="usr">Train Name:</label>
+                <input type="text" class="form-control" id="train-name-input">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-12 form-group">
+                <label for="usr">Destination:</label>
+                <input type="text" class="form-control" id="destination-input">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-12 form-group">
+                <label for="usr">First Train Time:</label>
+                <input type="text" class="form-control" id="first-time-input">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-12 form-group">
+                <label for="usr">Frequency (mins):</label>
+                <input type="text" class="form-control" id="frequency-input">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="submit" class="btn btn-dark  btn-block" id="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="logic.js"></script>
+</body>
+
+</html>
